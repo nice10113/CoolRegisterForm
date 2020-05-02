@@ -1,0 +1,91 @@
+$neon: #2196f3;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #000;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+
+form {
+  text-align: center;
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .border {
+    height: 3px;
+    background: #fff;
+    width: 200px;
+    margin: 20px auto;
+  }
+
+  .register-field {
+    display: block;
+    padding: 4rem 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    background: none;
+    border: none;
+    border-bottom: 6px solid #fff;
+    color: #fff;
+  }
+
+  .register-btn {
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    border: 5px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    &:hover {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+      transition: 0.4s;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: 40vh;
+}
+
+@media screen and (max-width: 864px) {
+  form {
+    width: 50%;
+
+    .register-field {
+      width: auto;
+      font-size: 2rem;
+    }
+
+    .register-btn {
+      font-size: 2rem;
+      width: 50%;
+    }
+  }
+}
